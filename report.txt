@@ -61,3 +61,12 @@ Drop these columns as they don't affect the prediction or have small impact
 
  column "Est. Founding Date" dropped , as data has founding year column, so it's repeating itself, and I conclude that month of establishment doesn't affect startups to become succesfull, 
 there can be small changes from month to month, politically or in market, but for this small dataset I doesn't count it. 
+
+
+We can find here correlations
+"Presence of a top angel or venture fund in previous round of investment" and "Employees per year of company existence" are highly correlated. 
+"Number of Investors in Seed" and "Last round of funding received (in milionUSD)"  are also highly correlated.
+Se we can drop of the columns from these pairs. They will be those who have lower correlation with target. 
+So we will drop "Presence of a top angel or venture fund in previous round of investment" and `.
+
+We use one hot encoding to work with categorial variables, then use PSA to reduce the number of features. 
