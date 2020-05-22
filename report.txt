@@ -1,0 +1,63 @@
+Change Success or Failed to 1 or 0 to binary classification.
+
+Change this column's values from Yes or No to 1 or 0  to make them numerical 
+
+"Presence of a top angel or venture fund in previous round of investment", 
+                  "Has the team size grown", "Worked in top companies",
+                              "Have been part of startups in the past?",
+                             "Have been part of successful startups in the past?",
+                             "Was he or she partner in Big 5 consulting?","Consulting experience?",
+                             "Catering to product/service across verticals",
+                              "Focus on consumer data?",
+                             "Subscription based business",
+                             "Capital intensive business e.g. e-commerce, Engineering products and operations can also cause a business to be capital intensive",
+                             "Crowdsourcing based business","Crowdfunding based business",
+                             "Machine Learning based business","Predictive Analytics business",
+                             "Speech analytics business", "Prescriptive analytics business",
+                             "Big Data Business", "Cross-Channel Analytics/ marketing channels",
+                             "Owns data or not? (monetization of data) e.g. Factual",
+                            "Is the company an aggregator/market place? e.g. Bluekai",
+                             "Exposure across the globe","Relevance of education to venture",
+                             "Relevance of experience to venture","Pricing Strategy","Hyper localisation",
+                             "Long term relationship with other founders",
+                             "Proprietary or patent position (competitive position)",
+                             "Barriers of entry for the competitors","Company awards",
+                             "Technical proficiencies to analyse and interpret unstructured data",
+                             "Solutions offered", "Invested through global incubation competitions?",
+                             
+
+
+Change this column's values from low medium high nothing to [0,3]
+
+"Number of  Sales Support material",
+                              "Top forums like \'Tech crunch\' or \'Venture beat\' talking about the company/model - How much is it being talked about?",
+                              "Breadth of experience across verticals","Experience in selling and building products",
+                              "Top management similarity",
+                              "Team Composition score","Time to market service or product"
+
+Change this column's values from small medium large to [0,2]
+
+"Average size of companies worked for in the past",
+                             "Average Years of experience for founder and co founder",
+                             "Dificulty of Obtaining Work force", "Disruptiveness of technology"
+
+
+Change this column's values from few many none to [0,2]
+
+"Average size of companies worked for in the past",
+                             "Average Years of experience for founder and co founder",
+                             "Dificulty of Obtaining Work force", "Disruptiveness of technology"
+
+
+
+
+
+
+Drop these columns as they don't affect the prediction or have small impact 
+
+"Controversial history of founder or co founder", "Legal risk and intellectual property",
+                       "Client Reputation", "Dependent-Company Status", "Est. Founding Date"
+
+
+ column "Est. Founding Date" dropped , as data has founding year column, so it's repeating itself, and I conclude that month of establishment doesn't affect startups to become succesfull, 
+there can be small changes from month to month, politically or in market, but for this small dataset I doesn't count it. 
